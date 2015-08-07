@@ -1,0 +1,30 @@
+﻿@using massey_effect_matthews_mages.Membership
+@model MembershipModel
+
+@{
+    ViewBag.Title = "LogIn";
+    ViewBag.StyleSheet = "log.css";
+}
+
+@if(Model != null)
+{
+    Model.Register = Model.Register ?? new RegisterModel();
+    Model.Login = Model.Login ?? new LoginModel();
+}
+<section id="content">
+    <section id="logform">
+        @if(Model != null)
+        { 
+            @Html.Partial("~/Views/Shared/_RegisterPartial.cshtml", Model.Register);
+            @Html.Partial("~/Views/Shared/_LoginPartial.cshtml", Model.Login);
+        }
+        else
+        {
+            @Html.Partial("~/Views/Shared/_RegisterPartial.cshtml");
+            @Html.Partial("~/Views/Shared/_LoginPartial.cshtml");
+        }
+    </section>
+
+    <div class="coolio" id="bot">
+    </div>
+</section>

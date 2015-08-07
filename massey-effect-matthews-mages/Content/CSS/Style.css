@@ -1,0 +1,40 @@
+﻿body {
+    padding:0px;
+    margin:0px;
+    background-color:black;
+    color:white;
+}
+
+header{
+    background-color:lightgray;
+    color:black;
+}
+
+footer{
+    background-color:lightgray;
+    color:black;
+}
+
+.bod{
+
+}
+
+ul{
+    
+}
+
+li{
+    
+}
+
+a{
+    text-decoration:none;
+    color: black;
+    font-weight:bold;
+    border:solid 1px black;
+}
+
+a:hover{
+    color:red;
+    border:solid 1px red;
+}

@@ -1,0 +1,23 @@
+*.class
+.settings/*
+bin
+obj/
+bin/
+deploy
+_ReSharper.*
+*.csproj.user
+*.resharper.user
+*.ldf
+*.resharper
+*.suo
+*.cache
+~$*
+*.TMP
+
+# Executables
+*.exe
+*.out
+*.app
+
+#database file
+*.mdf

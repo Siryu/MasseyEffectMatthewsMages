@@ -1,0 +1,14 @@
+﻿@model massey_effect_matthews_mages.Models.FriendData
+
+<h1>Friends Page</h1>
+@if(Model != null)
+{
+    Html.RenderPartial("../Friend/Messages", Model.Messages);
+    Html.RenderPartial("../Friend/FriendsList", Model.FriendsList);
+    Html.RenderPartial("../Friend/ActiveFriendRequests", Model.ActiveRequests);
+    Html.RenderPartial("../Friend/NotFriends", Model.NotFriends);
+}
+else
+{
+<h1>Oops! This Page is broken!</h1>
+}

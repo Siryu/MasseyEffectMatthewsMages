@@ -1,0 +1,13 @@
+﻿@model IEnumerable<string>
+
+<h1>Friends List</h1>
+@if (Model != null && Model.Count() > 0)
+{
+    foreach (string friend in Model)
+    {
+        <p>@friend</p>
+        <img src="~/Content/Images/Message.png" />
+        <img src="~/Content/Images/View.png" />
+        <img src="~/Content/Images/Delete.png" />
+    }
+}

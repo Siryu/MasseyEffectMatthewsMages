@@ -1,0 +1,12 @@
+﻿@using massey_effect_matthews_mages.Models
+@model IEnumerable<string>
+
+<h1>Not Friends</h1>
+@if (Model != null && Model.Count() > 0)
+{
+    foreach (string user in Model)
+    {
+        <p>@user</p>
+        <img src="~/Content/Images/Add.png" />
+    }
+}

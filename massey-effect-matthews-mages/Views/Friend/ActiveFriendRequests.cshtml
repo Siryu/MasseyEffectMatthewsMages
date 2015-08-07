@@ -1,0 +1,13 @@
+﻿@using massey_effect_matthews_mages.Models
+@model IEnumerable<FriendRequest>
+
+<h1>Active Friend Requests</h1>
+@if (Model != null && Model.Count() > 0)
+{
+    foreach (FriendRequest fr in Model)
+    {
+        <p>@fr.Sender</p>
+        <img src="~/Content/Images/Approve.png" />
+        <img src="~/Content/Images/Deny.png" />
+    }
+}

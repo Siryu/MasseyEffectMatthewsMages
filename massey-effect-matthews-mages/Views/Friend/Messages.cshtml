@@ -1,0 +1,13 @@
+﻿@using massey_effect_matthews_mages.Models
+@model IEnumerable<Message>
+
+<h1>Messages</h1>
+@if (Model != null && Model.Count() > 0)
+{
+    foreach (Message m in Model)
+    {
+        <p>@m.Sender</p>
+        <p>@m.TimeStamp</p>
+        <img src="~/Content/Images/Delete.png" />
+    }
+}

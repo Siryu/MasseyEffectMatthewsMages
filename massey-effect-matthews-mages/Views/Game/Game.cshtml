@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Game";
+    ViewBag.StyleSheet = "mainstyle.css";
+}
+
+<section id="content">
+
+    <div id="game-over-overlay">
+    </div>
+
+    <div id="game-over">
+        <h1>GAME OVER</h1>
+        <button id="play-again">Play Again</button>
+    </div>
+
+    <div class="wrapper" hidden="hidden">
+        <div id="instructions">
+            <div>
+                move with <span class="key">arrows</span> or <span class="key">wasd</span>
+            </div>
+            <div>
+                shoot with <span class="key">space</span>
+            </div>
+        </div>
+
+        <div id="score"></div>
+    </div>
+
+    <div id="canvas-container">
+    <canvas id="canvas"> </canvas>
+    </div>
+
+    <div class="coolio" id="bot">
+    </div>
+
+</section>
+
+<script src="~/Content/GameContent/JavaScript/input.js"></script>
+<script src="~/Content/GameContent/JavaScript/resources.js"></script>
+<script src="~/Content/GameContent/JavaScript/sprite.js"></script>
+<script src="~/Content/GameContent/JavaScript/app.js"></script>

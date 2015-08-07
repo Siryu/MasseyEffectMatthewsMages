@@ -1,0 +1,61 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<link type="text/css" rel="stylesheet" href="~/Content/CSS/validation.css" />
+<link type="text/css" rel="stylesheet" href="~/Content/CSS/mainstyle.css" />
+<link type="text/css" rel="stylesheet" href="~/Content/CSS/@ViewBag.StyleSheet"/>
+
+<head>
+    <title>Massey Effect</title>
+</head>
+
+
+<body>
+
+    <nav>
+        <section id="block">
+
+            <a href="\Index"><button class="navlink">Home</button></a>
+            <p> | </p>
+            <a href="\Profile"><button class="navlink">Profile</button></a>
+                <p> | </p>
+            <a href="\Game"><button class="navlink">Play</button></a>
+                    <p> | </p>
+            <a href="\Log"><button class="navlink">Log In</button></a>
+
+</section>
+        <div class="coolio" id="breaker">
+        </div>
+    </nav>
+
+    <main>
+        
+        @RenderBody()
+        
+    </main>
+
+
+
+
+    <footer>
+        <section id="fix">
+
+            <a id="facebook" class="social" href="https://www.facebook.com/wayne.maree.3"> </a>
+            <a id="twitter" class="social" href="http://www.twitter.com"> </a>
+            <a id="google" class="social" href="http://www.google.com"> </a>
+            <a id="youtube" class="social" href="http://www.youtube.com"> </a>
+            <p id="copyright">&#169; Copyright Que5t Team 2015</p>
+        </section>
+    </footer>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!--<script src="assets/scripts/script.js"> </script>-->
+
+</html>

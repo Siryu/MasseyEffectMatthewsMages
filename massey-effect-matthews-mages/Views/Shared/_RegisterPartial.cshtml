@@ -1,0 +1,20 @@
+﻿@using massey_effect_matthews_mages.Membership
+@model RegisterModel
+
+<section class="formy" id="newuser">
+    @using (Html.BeginForm("Register", "Membership", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <h1>New User:</h1>
+        <hr />
+        @Html.ValidationSummary()
+        <h4>User Name:</h4>
+        @Html.TextBoxFor(m => m.RegisterUserName)
+        <h4>Password:</h4>
+        @Html.PasswordFor(m => m.RegisterPassword)
+        <h4>Re-Enter Password:</h4>
+        @Html.PasswordFor(m => m.ConfirmPassword)
+        <input type="submit" class="button" value="Sign Up" />
+    }
+</section>
+
